@@ -11,12 +11,36 @@ body{
     margin:0;
     color:#333;
     line-height:1.7;
+    scroll-behavior: smooth; /* smooth scrolling */
 }
 
 .container{
     max-width:900px;
     margin:auto;
     padding:40px 20px;
+}
+
+/* Top Navigation */
+.top-nav{
+    background:#1E88E5;
+    padding:15px 20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 6px rgba(0,0,0,0.1);
+}
+
+.top-nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.top-nav a:hover{
+    text-decoration:underline;
 }
 
 h1,h2{
@@ -90,11 +114,13 @@ h1,h2{
     border-radius:10px;
     font-weight:bold;
 }
-    .category-image{
+
+.category-image{
     width:100%;
     border-radius:16px;
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
+
 .qr-container{
     display:flex;
     justify-content:center;
@@ -123,61 +149,55 @@ h1,h2{
 
 <body>
 
+<!-- TOP NAVIGATION -->
+<div class="top-nav">
+    <a href="#intro">Home</a>
+    <a href="#video">Video</a>
+    <a href="#categories">Packages</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</div>
+
 <div class="container">
 
-<!-- INTRO -->
-<div class="hero">
-<h1>Malaysia My Second Home (MM2H) 
-    马来西亚第二家园</h1>
-
-</div>
-
-<div class="section highlight">
-<h2>What is MM2H?
-什么是MM2H</h2>
+<!-- INTRODUCTION -->
+<div id="intro" class="section highlight hero">
+<h1>Malaysia My Second Home (MM2H) 马来西亚第二家园</h1>
 <p>
 MM2H is a long-term residency visa designed for foreigners who wish to stay in Malaysia for extended periods.
-It offers multiple benefits including long stay privileges, access to local lifestyle, lower entry price for property purchase/investment and a stable environment
+It offers multiple benefits including long stay privileges, access to local lifestyle, lower entry price for property purchase/investment, and a stable environment
 for retirement, family living, or long-term relocation.
 MM2H（马来西亚第二家园计划）是一项长期居留签证，专为希望在马来西亚长期居住的外国人设计。
-它提供多项福利，包括长期居留特权、体验当地生活方式、较低的购房/投资门槛以及稳定的环境，适合退休、家庭生活或长期移居。
 </p>
-</div>
-
-<!-- WHY MALAYSIA -->
-<div class="section highlight">
-<h2>Why Malaysia & Why Penang?</h2>
+<h2>Why Malaysia & Why Penang? 为什么选择马来西亚 & 槟城？</h2>
 <p>
-Malaysia offers a high quality of life with AFFORDABLE living costs, modern infrastructure, and a warm climate.
+Malaysia offers a high quality of life with affordable living costs, modern infrastructure, and a warm climate.
 马来西亚拥有高品质的生活，生活成本适中，基础设施现代化，气候温暖宜人。
 </p>
 <p>
-Penang is especially popular within expats due to its safety, international schools, excellent healthcare, food culture,
+Penang is especially popular with expats due to its safety, international schools, excellent healthcare, food culture,
 and strong expat community.
-槟城因其安全的环境、国际化的学校、优质的医疗保健、丰富的饮食文化以及强大的外籍人士社区而备受外籍人士的青睐。
+槟城因其安全环境、国际化学校、优质医疗、丰富饮食文化及强大的外籍社区而备受欢迎。
 </p>
 </div>
 
 <!-- VIDEO -->
-<div class="section video">
+<div id="video" class="section video">
 <h2>MM2H Explanation Video</h2>
 <iframe src="https://www.youtube.com/embed/CRaPAiJtolI" allowfullscreen></iframe>
 </div>
 
 <!-- CATEGORIES IMAGE SECTION -->
-<div class="section">
+<div id="categories" class="section">
 <h2>MM2H Categories</h2>
-
 <img src="categories.jpg" alt="MM2H Categories Chart" class="category-image">
-
 <p style="text-align:center;color:#555;margin-top:10px;">
 (Click to zoom if needed)
 </p>
-
 </div>
 
-<!-- FAQ TEMPLATE -->
-<div class="section">
+<!-- FAQ -->
+<div id="faq" class="section">
 <h2>Frequently Asked Questions</h2>
 
 <div class="faq-item">
@@ -206,12 +226,12 @@ and strong expat community.
 
 <div class="faq-item">
 <strong>Question 5: Is there a minimum days of stay requirement? 是否有最低居留天数要求？ </strong>
-<p>For applicant less then 50 years old will have minumum of 90 days stay requirement (can be fulfilled & cumulated by dependents), 50 years old and above will be waived from this requirement.
+<p>For applicant less than 50 years old will have minimum of 90 days stay requirement (can be fulfilled & cumulated by dependents), 50 years old and above will be waived from this requirement.
 50岁以下的申请人需满足至少90天的停留要求（可由家属代为满足和累积），50岁及以上的申请人可免除此要求。</p>
 </div>
 
 <div class="faq-item">
-<strong>Question 6: How do i start my MM2H application? </strong>
+<strong>Question 6: How do I start my MM2H application? 我如何开始申请MM2H？</strong>
 <p>Simply contact me via contact methods below for a free consultation.
 您可以通过以下联系方式与我联系，进行免费咨询。</p>
 </div>
@@ -219,7 +239,7 @@ and strong expat community.
 </div>
 
 <!-- CONTACT -->
-<div class="section contact">
+<div id="contact" class="section contact">
 <h2>Contact Me</h2>
 
 <a class="btn" href="https://wa.me/60104659861">WhatsApp</a>
@@ -242,10 +262,10 @@ and strong expat community.
 <div class="qr-box">
 <img src="line-qr.JPG" alt="LINE QR">
 <p>LINE</p>
-    
 </div>
 
 </div>
 
+</div> <!-- container -->
 </body>
 </html>
