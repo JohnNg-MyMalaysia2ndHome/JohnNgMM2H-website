@@ -5,6 +5,7 @@
 <title>MM2H Program</title>
 
 <style>
+/* GENERAL */
 body{
     font-family: TimesNewRoman, sans-serif;
     background:#F2F4F7;
@@ -20,29 +21,6 @@ body{
     padding:40px 20px;
 }
 
-/* Top Navigation */
-.top-nav{
-    background:white;
-    padding:15px 20px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 6px rgba(0,0,0,0.1);
-}
-
-.top-nav a{
-    color:#333;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-}
-
-.top-nav a:hover{
-    text-decoration:underline;
-}
-
 h1,h2{
     color:#222;
 }
@@ -51,6 +29,40 @@ h1,h2{
     margin-top:70px;
 }
 
+/* TOP NAV + HEADER INTEGRATED */
+.top-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:15px 20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* HEADER TITLE */
+.top-nav .title{
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+}
+
+/* NAV LINKS */
+.top-nav .nav-links a{
+    color:#333;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.top-nav .nav-links a:hover{
+    text-decoration:underline;
+}
+
+/* HERO TEXT */
 .hero{
     text-align:center;
 }
@@ -60,7 +72,7 @@ h1,h2{
     color:#555;
 }
 
-/* Columns for intro */
+/* INTRO COLUMNS */
 .intro-columns{
     display:flex;
     gap:30px;
@@ -76,31 +88,21 @@ h1,h2{
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* VIDEO */
 .video iframe{
     width:100%;
     height:450px;
     border-radius:14px;
 }
 
-.boxes{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.box{
-    flex:1;
-    min-width:240px;
-    background:white;
-    padding:25px;
+/* CATEGORY IMAGE */
+.category-image{
+    width:100%;
     border-radius:16px;
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
-.box h3{
-    color:#1e88e5;
-}
-
+/* FAQ */
 .faq-item{
     margin-bottom:15px;
     padding:18px;
@@ -109,6 +111,7 @@ h1,h2{
     box-shadow:0 3px 8px rgba(0,0,0,0.04);
 }
 
+/* CONTACT */
 .contact{
     text-align:center;
 }
@@ -124,12 +127,7 @@ h1,h2{
     font-weight:bold;
 }
 
-.category-image{
-    width:100%;
-    border-radius:16px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.05);
-}
-
+/* QR CODES */
 .qr-container{
     display:flex;
     justify-content:center;
@@ -152,19 +150,21 @@ h1,h2{
     margin-top:8px;
     font-weight:bold;
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- TOP NAVIGATION -->
+<!-- TOP NAV + HEADER INTEGRATED -->
 <div class="top-nav">
-    <a href="#mm2h">Home</a>
-    <a href="#video">Video</a>
-    <a href="#categories">Packages</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
+    <div class="title">My Malaysia 2nd Home 马来西亚第二家园计划</div>
+    <div class="nav-links">
+        <a href="#mm2h">Home</a>
+        <a href="#video">Video</a>
+        <a href="#categories">Packages</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </div>
 </div>
 
 <div class="container">
@@ -201,7 +201,7 @@ h1,h2{
 <iframe src="https://www.youtube.com/embed/CRaPAiJtolI" allowfullscreen></iframe>
 </div>
 
-<!-- CATEGORIES IMAGE SECTION -->
+<!-- CATEGORIES IMAGE -->
 <div id="categories" class="section">
 <h2>MM2H Categories</h2>
 <img src="categories.jpg" alt="MM2H Categories Chart" class="category-image">
@@ -215,39 +215,39 @@ h1,h2{
 <h2>Frequently Asked Questions</h2>
 
 <div class="faq-item">
-<strong>Question 1:What does the New Application Fee include? 新申请费包含哪些内容？</strong>
-<p>The Application Fee which is set by the government is inclusive of the agency’s Professional Service Fee, Visa Fee, Participation Fee, Medical Check, Health Insurance, Translation Fee(if applicable) for the Principal. 
+<strong>Question 1: What does the New Application Fee include? 新申请费包含哪些内容？</strong>
+<p>The Application Fee set by the government includes agency Professional Service Fee, Visa Fee, Participation Fee, Medical Check, Health Insurance, Translation Fee(if applicable).
 政府规定的申请费包括代理机构的专业服务费、签证费、参与费、体检费、健康保险费、翻译费（如适用）。</p>
 </div>
 
 <div class="faq-item">
-<strong>Question 2:How long is the MM2H visa valid for? MM2H签证有效期是多久？</strong>
-<p>The validity depends on the category approved (such as Silver, Gold, or Platinum), with long-term stay privileges that can be renewed.
-有效期取决于获批的签证类别（例如银卡、金卡或白金卡），持有者享有可续签的长期居留权。</p>
+<strong>Question 2: How long is the MM2H visa valid for? MM2H签证有效期是多久？</strong>
+<p>The validity depends on the category approved (Silver, Gold, Platinum), with long-term stay privileges that can be renewed.
+有效期取决于获批的签证类别（银卡、金卡或白金卡），持有者享有可续签的长期居留权。</p>
 </div>
 
 <div class="faq-item">
 <strong>Question 3: Can I bring my family under MM2H? 我可以带着家人通过MM2H计划移民吗？</strong>
-<p>Yes. Spouse, children and parents can be included as dependents under the MM2H program, subject to approval.
+<p>Yes. Spouse, children and parents can be included as dependents, subject to approval.
 是的。配偶、子女和父母可以作为副申请人纳入马来西亚第二家园计划，但需获得批准。</p>
 </div>
 
 <div class="faq-item">
-<strong>Question 4:How long does the MM2H application process take? 申请MM2H需要多久的时间？</strong>
-<p>The process will take roughly 3-6 months time till you get approval letter. 
-从申请到收到批准信，整个过程大约需要3-6个月的时间。</p>
+<strong>Question 4: How long does the MM2H application process take? 申请MM2H需要多久的时间？</strong>
+<p>Roughly 3-6 months until approval letter is issued.
+整个过程大约需要3-6个月。</p>
 </div>
 
 <div class="faq-item">
-<strong>Question 5: Is there a minimum days of stay requirement? 是否有最低居留天数要求？ </strong>
-<p>For applicant less than 50 years old will have minimum of 90 days stay requirement (can be fulfilled & cumulated by dependents), 50 years old and above will be waived from this requirement.
-50岁以下的申请人需满足至少90天的停留要求（可由家属代为满足和累积），50岁及以上的申请人可免除此要求。</p>
+<strong>Question 5: Is there a minimum stay requirement? 是否有最低居留天数要求？</strong>
+<p>Applicants under 50 years must stay at least 90 days (can be fulfilled & cumulated by dependents); 50+ years are waived.
+50岁以下申请人需满足至少90天的停留要求（可由家属代为满足和累积），50岁及以上申请人可免除。</p>
 </div>
 
 <div class="faq-item">
 <strong>Question 6: How do I start my MM2H application? 我如何开始申请MM2H？</strong>
-<p>Simply contact me via contact methods below for a free consultation.
-您可以通过以下联系方式与我联系，进行免费咨询。</p>
+<p>Contact me via the methods below for a free consultation.
+请通过以下联系方式进行免费咨询。</p>
 </div>
 
 </div>
@@ -262,24 +262,21 @@ h1,h2{
 <a class="btn" href="https://www.mynexthome.com.my/index.html">Our Company</a>
 
 <div class="qr-container">
-
 <div class="qr-box">
 <img src="whatsapp-qr.jpg" alt="WhatsApp QR">
 <p>WhatsApp</p>
 </div>
-
 <div class="qr-box">
 <img src="wechat-qr.jpg" alt="WeChat QR">
 <p>WeChat</p>
 </div>
-
 <div class="qr-box">
 <img src="line-qr.JPG" alt="LINE QR">
 <p>LINE</p>
 </div>
-
 </div>
 
 </div> <!-- container -->
+
 </body>
 </html>
