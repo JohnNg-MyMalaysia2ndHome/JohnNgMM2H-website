@@ -11,7 +11,7 @@ body{
     margin:0;
     color:#333;
     line-height:1.7;
-    scroll-behavior: smooth; /* smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -22,7 +22,7 @@ body{
 
 /* Top Navigation */
 .top-nav{
-    background:#1E88E5;
+    background:white;
     padding:15px 20px;
     text-align:center;
     position:sticky;
@@ -32,7 +32,7 @@ body{
 }
 
 .top-nav a{
-    color:white;
+    color:#333;
     margin:0 15px;
     text-decoration:none;
     font-weight:bold;
@@ -60,9 +60,18 @@ h1,h2{
     color:#555;
 }
 
-.highlight{
+/* Columns for intro */
+.intro-columns{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.intro-column{
+    flex:1;
+    min-width:280px;
     background:white;
-    padding:30px;
+    padding:25px;
     border-radius:16px;
     box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
@@ -151,7 +160,7 @@ h1,h2{
 
 <!-- TOP NAVIGATION -->
 <div class="top-nav">
-    <a href="#intro">Home</a>
+    <a href="#mm2h">Home</a>
     <a href="#video">Video</a>
     <a href="#categories">Packages</a>
     <a href="#faq">FAQ</a>
@@ -161,24 +170,29 @@ h1,h2{
 <div class="container">
 
 <!-- INTRODUCTION -->
-<div id="intro" class="section highlight hero">
-<h1>Malaysia My Second Home (MM2H) 马来西亚第二家园</h1>
-<p>
-MM2H is a long-term residency visa designed for foreigners who wish to stay in Malaysia for extended periods.
-It offers multiple benefits including long stay privileges, access to local lifestyle, lower entry price for property purchase/investment, and a stable environment
-for retirement, family living, or long-term relocation.
-MM2H（马来西亚第二家园计划）是一项长期居留签证，专为希望在马来西亚长期居住的外国人设计。
-</p>
-<h2>Why Malaysia & Why Penang? 为什么选择马来西亚 & 槟城？</h2>
-<p>
-Malaysia offers a high quality of life with affordable living costs, modern infrastructure, and a warm climate.
-马来西亚拥有高品质的生活，生活成本适中，基础设施现代化，气候温暖宜人。
-</p>
-<p>
-Penang is especially popular with expats due to its safety, international schools, excellent healthcare, food culture,
-and strong expat community.
-槟城因其安全环境、国际化学校、优质医疗、丰富饮食文化及强大的外籍社区而备受欢迎。
-</p>
+<div id="mm2h" class="section intro-columns">
+    <div class="intro-column">
+        <h2>What is MM2H? 什么是MM2H</h2>
+        <p>
+        MM2H is a long-term residency visa designed for foreigners who wish to stay in Malaysia for extended periods.
+        It offers multiple benefits including long stay privileges, access to local lifestyle, lower entry price for property purchase/investment, and a stable environment
+        for retirement, family living, or long-term relocation.
+        MM2H（马来西亚第二家园计划）是一项长期居留签证，专为希望在马来西亚长期居住的外国人设计。
+        </p>
+    </div>
+
+    <div class="intro-column">
+        <h2>Why Malaysia & Why Penang? 为什么选择马来西亚 & 槟城？</h2>
+        <p>
+        Malaysia offers a high quality of life with affordable living costs, modern infrastructure, and a warm climate.
+        马来西亚拥有高品质的生活，生活成本适中，基础设施现代化，气候温暖宜人。
+        </p>
+        <p>
+        Penang is especially popular with expats due to its safety, international schools, excellent healthcare, food culture,
+        and strong expat community.
+        槟城因其安全环境、国际化学校、优质医疗、丰富饮食文化及强大的外籍社区而备受欢迎。
+        </p>
+    </div>
 </div>
 
 <!-- VIDEO -->
