@@ -29,7 +29,7 @@ h1,h2{
     margin-top:70px;
 }
 
-/* TOP NAV + HEADER INTEGRATED */
+/* TOP NAV BAR */
 .top-nav{
     display:flex;
     justify-content:space-between;
@@ -40,13 +40,6 @@ h1,h2{
     top:0;
     z-index:1000;
     box-shadow:0 3px 6px rgba(0,0,0,0.1);
-}
-
-/* HEADER TITLE */
-.top-nav .title{
-    font-size:20px;
-    font-weight:bold;
-    color:#222;
 }
 
 /* NAV LINKS */
@@ -62,14 +55,21 @@ h1,h2{
     text-decoration:underline;
 }
 
-/* HERO TEXT */
-.hero{
+/* BIG HERO HEADER ABOVE INTRO */
+.hero-header{
     text-align:center;
+    padding:50px 20px;
+    background:white;
+    border-radius:16px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom:30px;
 }
 
-.hero p{
-    font-size:18px;
-    color:#555;
+.hero-header h1{
+    margin:0;
+    font-size:36px;
+    color:#222;
+    line-height:1.2;
 }
 
 /* INTRO COLUMNS */
@@ -155,9 +155,8 @@ h1,h2{
 
 <body>
 
-<!-- TOP NAV + HEADER INTEGRATED -->
+<!-- TOP NAV BAR -->
 <div class="top-nav">
-    <div class="title">My Malaysia 2nd Home 马来西亚第二家园计划</div>
     <div class="nav-links">
         <a href="#mm2h">Home</a>
         <a href="#video">Video</a>
@@ -169,7 +168,12 @@ h1,h2{
 
 <div class="container">
 
-<!-- INTRODUCTION -->
+<!-- BIG HERO HEADER -->
+<div class="hero-header">
+    <h1>My Malaysia 2nd Home 马来西亚第二家园</h1>
+</div>
+
+<!-- INTRODUCTION COLUMNS -->
 <div id="mm2h" class="section intro-columns">
     <div class="intro-column">
         <h2>What is MM2H? 什么是MM2H</h2>
